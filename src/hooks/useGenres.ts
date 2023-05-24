@@ -2,8 +2,8 @@ import useFetchData from "./useFetchData";
 
 interface Genre {
   id: number;
-  slug: string;
   name: string;
+  image_background: string;
 }
 
 const useGenres = () => useFetchData<Genre>("/genres");
